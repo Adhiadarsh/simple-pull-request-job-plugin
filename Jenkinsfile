@@ -23,7 +23,12 @@ pipeline{
                                sh "echo step 4" 
                         }
                 }
+            post{
+                always {
+                    deleteDir()
+                }
             
+            }    
             
         }
               
