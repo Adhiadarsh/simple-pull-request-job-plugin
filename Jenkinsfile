@@ -12,11 +12,8 @@ pipline{
                         }
                 }
                 stage('Three'){
-                        when {
-                                not {
-                                    branch "master"
-                                }
-                        }
+                      
+                       
                         steps{
                             echo "Hello"
                         }
@@ -29,11 +26,7 @@ pipline{
                                        }
                 }
                 stage('Integration test') {
-                                    agent {
-                                        docker {
-                                                reuseNode  false
-                                                image 'ubuntu'
-                                        }
+                                    
                                     }
                                     steps {
                                         echo 'Running the integration test..'
