@@ -14,7 +14,7 @@ pipeline{
                 
                 stage('Three'){
                         steps{
-                               sh "echo step 3" 
+                               sh "date" 
                         }
                 }
                
