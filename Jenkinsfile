@@ -13,9 +13,15 @@ pipeline{
                 }
                 
                 stage('Three'){
-                        steps{
-                               sh "date" 
-                        }
+                    
+                    parallel {
+                                    stage('Unit Test'){
+                                                     steps{
+                                                             echo "Running the unit test.."
+                                                     } 
+                                   }
+                               {
+                       
                 }
                
                 stage('Four'){
@@ -23,10 +29,7 @@ pipeline{
                                sh "echo step 4" 
                         }
                 }
-            post{
-                always {
-                    deleteDir()
-                }
+           
             
             }    
             
