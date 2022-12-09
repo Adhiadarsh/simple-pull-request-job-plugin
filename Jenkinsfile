@@ -3,7 +3,7 @@ pipline{
         stages {
                 stage('One'){
                         steps{
-                                echo 'hi,this is Zulatkha from edureka'
+                                sh label: '', script: 'echo "hi"'
                         }
                 }
                 stage('Two'){
