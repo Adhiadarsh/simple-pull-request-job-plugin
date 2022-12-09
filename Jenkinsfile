@@ -11,9 +11,7 @@ pipline{
                                 input('Do you want to proced?')
                         }
                 }
-                stage('Three'){
-                      
-                       
+                stage('Three') {
                         steps{
                             echo "Hello"
                         }
@@ -22,19 +20,22 @@ pipline{
                                 parallel {
                                     stage('Unit Test'){
                                                      steps{
-                                                             echo "Running the unit test.."
-                                       }
+                                
+                                                         echo "Running the unit test.."
+                                                     }
+                                    }
+                                }
                 }
                 stage('Integration test') {
                                     
-                                    }
+                                   
                                     steps {
                                         echo 'Running the integration test..'
                                     }
                                 
                                 
                 }
-            }
+            
         }
 }
 }
