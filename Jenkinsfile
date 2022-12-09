@@ -3,7 +3,7 @@ pipline{
         stages {
                 stage('One'){
                         steps{
-                                sh label: '', script: 'echo "hi"'
+                               sh "echo step 1"
                         }
                 }
                 stage('Two'){
