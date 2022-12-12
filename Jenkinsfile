@@ -18,7 +18,7 @@ pipeline{
                 }
                 stage('Four'){
                     steps{
-                               sh "echo final fouth steps" 
+                               sh "echo final foutth steps is succesful" 
                         }
                 }
         }        
