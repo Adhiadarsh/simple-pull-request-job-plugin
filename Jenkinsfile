@@ -3,7 +3,7 @@ pipeline{
         stages {
                 stage('One'){
                         steps{
-                               sh "echo step 1"
+                               sh "echo step1 is executed"
                         }
                 }
                 stage('Two'){
@@ -13,11 +13,11 @@ pipeline{
                 }
                 stage('Three'){
                     steps{
-                            sh "echo hello world"
+                            sh "echo  after permison step3 is executed"
                     }
                 }
                 stage('Four'){
-                        steps{
+                    steps{
                                sh "echo step 4" 
                         }
                 }
